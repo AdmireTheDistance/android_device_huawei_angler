@@ -29,6 +29,10 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a7
 
+# System
+export USE_CCACHE := 1
+export USE_SYSTEM_CCACHE := 1
+
 ENABLE_CPUSETS := true
 
 BOARD_KERNEL_BASE        := 0x00000000
