@@ -143,3 +143,10 @@ KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
 TARGET_KERNEL_CONFIG := angler_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+
+export CLANG_03 := true
+export ENABLE_GCCONLY := true
+export GRAPHITE_OPTS := true
+export CORTEX_TUNINGS := true
+export STRICT_ALIASING := true
+export USE_03_OPTIMIZATIONS := true
