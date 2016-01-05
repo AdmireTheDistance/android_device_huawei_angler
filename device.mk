@@ -19,6 +19,8 @@
 #
 # Everything in this directory will become public
 
+GAPPS_VARIANT := stock
+
 
 PRODUCT_COPY_FILES += \
     device/huawei/angler/init.angler.rc:root/init.angler.rc \
@@ -392,3 +394,6 @@ $(call inherit-product-if-exists, vendor/qcom/gpu/msm8994/msm8994-gpu-vendor.mk)
 
 # copy wlan firmware
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4358/device-bcm.mk)
+
+# GApps
+$(call inherit-product, vendor/google/build/opengapps-packages.mk)
