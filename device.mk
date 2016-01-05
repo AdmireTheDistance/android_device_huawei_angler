@@ -19,7 +19,7 @@
 #
 # Everything in this directory will become public
 
-GAPPS_VARIANT := stock
+#GAPPS_VARIANT := mini
 
 
 PRODUCT_COPY_FILES += \
@@ -396,4 +396,4 @@ $(call inherit-product-if-exists, vendor/qcom/gpu/msm8994/msm8994-gpu-vendor.mk)
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4358/device-bcm.mk)
 
 # GApps
-$(call inherit-product, vendor/google/build/opengapps-packages.mk)
+#$(call inherit-product, vendor/google/build/opengapps-packages.mk)
